@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Youtube Clone Project</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.min.css" integrity="sha512-F/yRpRY8sctKzP7exU5PLGejwg/QtjDX6CIy/41nApe7JqdZgCcCzJTNq9Rcp/XwbeeTGillGevBakruY15pxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Kanit:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS-FILE/navbar.css"/>
+    <link rel="stylesheet" href="/CSS-FILE/sidebar.css"/>
+    <link rel="stylesheet" href="/CSS-FILE/main.content.css">
+  </head>
+  <body>
+    <div class="container">
+      <!------------------- 1st create nav bar of project ------------------>
+      <header>
+        <nav class="navbar">
+          <div class="nav-section nav-left">
+            <button class="nav-button manu-button">
+              <img src="/Logo-Icon-Png/home-icon.svg" alt="manu" class="manu-btn">
+            </button>
+            <a href="#" class="nav-logo">
+              <img src="/Logo-Icon-Png/youtube-logo.png" alt="logo" class="logo-image">
+            </a>
+          </div>
+          <div class="nav-section nav-center">
+            <div class="search-form">
+              <input type="search" placeholder="search" required class="search-input">
+              <button class="nav-search-button">
+                <img src="/Logo-Icon-Png/search-icon.svg" alt="search" class="search-btn">
+              </button>
+            </div>
+          </div>
+          <div class="nav-section nav-right">
+            <button class="nav-button mic-button">
+              <img src="/Logo-Icon-Png/voice.png" alt="mic" class="voice-icon">
+            </button>
+            <button class="nav-button create-button">
+              <img src="/Logo-Icon-Png/plus-icon.svg" alt="create" class="create-btn">
+            </button>
+            <img src="/Logo-Icon-Png/profiloe-image.jpg" alt="profile" class="user-image">
+          </div>
+        </nav>
+      </header>
+      
+      <div class="main-layout">
+            <!--------------------------- 2nd create a sidebar--------------------  -->
+            <aside class="sidebar">
+              <div class="link-container">
+                <div class="link-section">
+                  <a href="#" class="link-item">
+                    <img src="/Logo-Icon-Png/side-home-icon.svg" alt="home" class="home-icon">Home
+                  </a>
+                  <a href="#" class="link-item">
+                    <img src="/Logo-Icon-Png/shorts-icon.svg" alt="short" class="short-icon">Short
+                  </a>
+                  <a href="#" class="link-item">
+                    <img src="/Logo-Icon-Png/subscriptions-icon.png" alt="subscriptions-icon" class="subscriptions-icon">Subscription
+                  </a>
+                </div>  
+                <div class="section-separator"></div>
+
+                <div class="link-section">
+                  <h4 class="section-title">You</h4>
+                  <a href="#" class="link-item">
+                    <img src="/Logo-Icon-Png/like-icon.png" alt="like" cllike-icon">Like icon
+                  </a>
+                  <a href="#" class="link-item">
+                    <img src="/Logo-Icon-Png/history-icon.png" alt="history" clhisory-icon">History
+                  </a>
+                  <a href="#" class="link-item">
+                    <img src="/Logo-Icon-Png/watch-later-icon.png" alt="watch-later" clwatch-later-icon">Watch later
+                  </a>
+                </div>  
+                <div class="section-separator"></div>
+
+                <div class="link-section">
+                  <h4 class="section-title">Explore</h4>
+                  <a href="#" class="link-item">
+                    <img src="/Logo-Icon-Png/download-icon.png" alt="downloadownload-icon">Download
+                  </a>
+                  <a href="#" class="link-item">
+                    <img src="/Logo-Icon-Png/play-list-icon.png" alt="play-lisplay-list-icon">Play list
+                  </a>
+                  <a href="#" class="link-item">
+                    <img src="/Logo-Icon-Png/bell-icon.svg" alt="belbell-icon">Notification
+                  </a>
+                </div>  
+                <div class="section-separator"></div>
+
+                <div class="link-section">
+                  <h4 class="section-title">More form youtube</h4>
+                  <a href="#" class="link-item">
+                    <img src="/Logo-Icon-Png/movies-icon.png" alt="movies-icon">Movies
+                  </a>
+                  <a href="#" class="link-item">
+                    <img src="/Logo-Icon-Png/music-icon.png" alt="music" class="Music-icon">Music
+                  </a>
+                  <a href="#" class="link-item">
+                    <img src="/Logo-Icon-Png/show-more-icon.png" alt="show-more" class="show-more-icon">Show more
+                  </a>
+                </div>  
+                <div class="section-separator"></div>
+              </div>
+            </aside>
+      
+
+            <!-----------3rd create main containt video list----------->
+        <main class="container-content">
+          <div class="video-list">
+            <a href="" class="video-card">
+              <div class="tumbnail-container">
+                <img src="/Thumbnail-Image/thumbnail-1.avif" alt="Thumbnail" class="thumbnail">
+                <div class="duration">10:03</div>
+              </div>
+              <div class="video-info">
+                <img src="/Image/linkedin,back.profile photo.jpg" alt="profile-pic" class="icon">
+                <div class="video-details">
+                  <h2 class="title">Create thumbnail whit sumit</h2>
+                  <p class="channel-name">My blog</p>
+                  <p class="views">27 Views . 4 month ago</p>
+                </div>
+              </div>
+            </a>
+            <a href="" class="video-card">
+              <div class="tumbnail-container">
+                <img src="/Thumbnail-Image/thumbnail-2.avif" alt="Thumbnail" class="thumbnail">
+                <div class="duration">10:03</div>
+              </div>
+              <div class="video-info">
+                <img src="/Image/linkedin,back.profile photo.jpg" alt="profile-pic" class="icon">
+                <div class="video-details">
+                  <h2 class="title">How to upload project on github | Github Tutorial - How to use Github</h2>
+                  <p class="channel-name">My blog</p>
+                  <p class="views">27 Views . 4 month ago</p>
+                </div>
+              </div>
+            </a>
+            <a href="" class="video-card">
+              <div class="tumbnail-container">
+                <img src="/Thumbnail-Image/thumbnail-3.avif" alt="Thumbnail" class="thumbnail">
+                <div class="duration">10:03</div>
+              </div>
+              <div class="video-info">
+                <img src="/Image/linkedin,back.profile photo.jpg" alt="profile-pic" class="icon">
+                <div class="video-details">
+                  <h2 class="title">Best view in dubai and visit my blog</h2>
+                  <p class="channel-name">My blog</p>
+                  <p class="views">27 Views . 4 month ago</p>
+                </div>
+              </div>
+            </a>
+            <a href="" class="video-card">
+              <div class="tumbnail-container">
+                <img src="/Thumbnail-Image/thumbnail-4.avif" alt="Thumbnail" class="thumbnail">
+                <div class="duration">10:03</div>
+              </div>
+              <div class="video-info">
+                <img src="/Image/linkedin,back.profile photo.jpg" alt="profile-pic" class="icon">
+                <div class="video-details">
+                  <h2 class="title">maggie chalenge in carry bhai</h2>
+                  <p class="channel-name">My blog</p>
+                  <p class="views">27 Views . 4 month ago</p>
+                </div>
+              </div>
+            </a>
+            <a href="" class="video-card">
+              <div class="tumbnail-container">
+                <img src="/Thumbnail-Image/thumbnail-5.avif" alt="Thumbnail" class="thumbnail">
+                <div class="duration">10:03</div>
+              </div>
+              <div class="video-info">
+                <img src="/Image/linkedin,back.profile photo.jpg" alt="profile-pic" class="icon">
+                <div class="video-details">
+                  <h2 class="title">We often say the best YouTube thumbnails draw people in with their emotional appeal.</h2>
+                  <p class="channel-name">My blog</p>
+                  <p class="views">27 Views . 4 month ago</p>
+                </div>
+              </div>
+            </a>
+            <a href="" class="video-card">
+              <div class="tumbnail-container">
+                <img src="/Thumbnail-Image/thumbnail-6.avif" alt="Thumbnail" class="thumbnail">
+                <div class="duration">10:03</div>
+              </div>
+              <div class="video-info">
+                <img src="/Image/linkedin,back.profile photo.jpg" alt="profile-pic" class="icon">
+                <div class="video-details">
+                  <h2 class="title">Thumbnails that compare an object or place in its before-and-after state</h2>
+                  <p class="channel-name">My blog</p>
+                  <p class="views">27 Views . 4 month ago</p>
+                </div>
+              </div>
+            </a>
+            <a href="" class="video-card">
+              <div class="tumbnail-container">
+                <img src="/Thumbnail-Image/thumbnail-7.jpg" alt="Thumbnail" class="thumbnail">
+                <div class="duration">10:03</div>
+              </div>
+              <div class="video-info">
+                <img src="/Image/linkedin,back.profile photo.jpg" alt="profile-pic" class="icon">
+                <div class="video-details">
+                  <h2 class="title">Thumbnails that follow the “versus” format compare two items in the same category.</h2>
+                  <p class="channel-name">My blog</p>
+                  <p class="views">27 Views . 4 month ago</p>
+                </div>
+              </div>
+            </a>
+            <a href="" class="video-card">
+              <div class="tumbnail-container">
+                <img src="/Thumbnail-Image/thumbnail-8.avif" alt="Thumbnail" class="thumbnail">
+                <div class="duration">10:03</div>
+              </div>
+              <div class="video-info">
+                <img src="/Image/linkedin,back.profile photo.jpg" alt="profile-pic" class="icon">
+                <div class="video-details">
+                  <h2 class="title">That will give viewers a subtle preview of what to expect when they press play.</h2>
+                  <p class="channel-name">My blog</p>
+                  <p class="views">27 Views . 4 month ago</p>
+                </div>
+              </div>
+            </a>
+            <a href="" class="video-card">
+              <div class="tumbnail-container">
+                <img src="/Thumbnail-Image/thumbnail-9.avif" alt="Thumbnail" class="thumbnail">
+                <div class="duration">10:03</div>
+              </div>
+              <div class="video-info">
+                <img src="/Image/linkedin,back.profile photo.jpg" alt="profile-pic" class="icon">
+                <div class="video-details">
+                  <h2 class="title">Showing products in your thumbnail is a good idea if you have a tech channel, gaming channel,</h2>
+                  <p class="channel-name">My blog</p>
+                  <p class="views">27 Views . 4 month ago</p>
+                </div>
+              </div>
+            </a>
+            <a href="" class="video-card">
+              <div class="tumbnail-container">
+                <img src="/Thumbnail-Image/thumbnail-10.avif" alt="Thumbnail" class="thumbnail">
+                <div class="duration">10:03</div>
+              </div>
+              <div class="video-info">
+                <img src="/Image/linkedin,back.profile photo.jpg" alt="profile-pic" class="icon">
+                <div class="video-details">
+                  <h2 class="title">A funny title and thumbnail can catch viewers off guard in a good way. They might laugh,</h2>
+                  <p class="channel-name">My blog</p>
+                  <p class="views">27 Views . 4 month ago</p>
+                </div>
+              </div>
+            </a>
+            <a href="" class="video-card">
+              <div class="tumbnail-container">
+                <img src="/Thumbnail-Image/thumbnail-11.avif" alt="Thumbnail" class="thumbnail">
+                <div class="duration">10:03</div>
+              </div>
+              <div class="video-info">
+                <img src="/Image/linkedin,back.profile photo.jpg" alt="profile-pic" class="icon">
+                <div class="video-details">
+                  <h2 class="title">Nature has a way of captivating us all, from the red rock formations in Arizona to the clear blue waters of Jamaica</h2>
+                  <p class="channel-name">My blog</p>
+                  <p class="views">27 Views . 4 month ago</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="/JAVASCRIPT-FILE/sidebar.js"></script>
+  </body>
+</html>
