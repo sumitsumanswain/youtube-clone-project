@@ -1,0 +1,58 @@
+:root{
+  --white-color: #fff;
+  --black-color: #000;
+  --light-white-color: #f0f0f0;
+  --light-gray-color: #e5e5e5;
+  --border-color: #d4d4d4;
+  --primary-color: #3b82f6;
+  --secondary-color: #404040;
+  --overlay-dark-color: rgba(0, 0, 0, 0.6);
+}
+.container-content{
+ margin: 5px 5px 0px 5px;
+}
+.video-info{
+  display: flex;
+  gap: 7px;
+  padding: 9px 8px;
+
+}
+.thumbnail{
+  width: 100%;
+  border-radius: 8px;
+  aspect-ratio: 16 / 9;
+}
+.duration{
+  font-size: 8px;
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  background-color: var(--black-color);
+  color: white;
+  padding: 2px;
+  border-radius: 2.3px;
+}
+.tumbnail-container{
+  position: relative;
+}
+.icon{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-left: -5px;
+}
+.title{
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--black-color);
+}
+p{
+  font-size: 9px;
+  color: var(--secondary-color);
+}
+.video-list{
+  display: grid;
+  gap: 8px;
+  padding: 5px 0 4px;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+}

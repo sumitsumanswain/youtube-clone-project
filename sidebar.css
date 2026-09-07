@@ -1,0 +1,139 @@
+
+:root{
+  --white-color: #fff;
+  --black-color: #000;
+  --light-white-color: #f0f0f0;
+  --light-gray-color: #e5e5e5;
+  --border-color: #d4d4d4;
+  --primary-color: #3b82f6;
+  --secondary-color: #404040;
+  --overlay-dark-color: rgba(0, 0, 0, 0.6);
+}
+
+.main-layout{
+  display: flex;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Sidebar */
+.sidebar{
+  flex: 0 0 110px;
+  width: 110px;
+  background-color: var(--white-color);
+  height: 100%;/*change-6*/
+}
+
+.sidebar.active {
+  display: none;
+}
+
+/* Main content */
+.container-content{
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  margin: 5px 5px 0;
+  overflow-y: auto; 
+  overflow-x: hidden; 
+}
+
+/* Sidebar links */
+.sidebar .link-section img{
+  width: 13px;
+  margin-right: 10px;
+}
+
+.link-item{
+  display: flex;
+  align-items: center;
+  font-size: 8.7px;
+  white-space: nowrap;
+  padding: 4px 11px;
+  color: var(--black-color);
+  border-radius: 7px;
+  text-decoration: none;
+}
+
+.link-item:hover{
+  background: var(--light-gray-color);
+}
+
+.section-title{
+  font-size: 9px;
+  margin: 0 0 0 7px;
+}
+
+/* IMPORTANT:
+   Don't use position: fixed here.
+*/
+.link-container{
+    
+  height: 100%; 
+  width: 100%; 
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.link-container:hover{
+  scrollbar-color: #a6a6a6 transparent;
+}
+
+.section-separator{
+  height: 1px;
+  margin: 10px 0;
+  background: var(--light-gray-color);
+}
+
+/* Small screens */
+@media (max-width: 600px){
+  .sidebar{
+    flex-basis: 80px;
+    width: 80px;
+  }
+
+  .container-content{
+    min-width: 0;
+  }
+
+  .link-item{
+    font-size: 7px;
+    padding: 4px 6px;
+  }
+
+  .sidebar .link-section img{
+    width: 11px;
+    margin-right: 5px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 350px) {
+
+  /* Hide sidebar */
+  .sidebar {
+    display: none;
+  }
+
+  /* Main content takes full width */
+  .container-content {
+    width: 100%;
+    flex: 1;
+    min-width: 0;
+    margin: 5px 0 0;
+    padding: 0 5px;
+  }
+
+  /* Video list uses full available width */
+  .video-list {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* Thumbnail fills the screen */
+  .thumbnail {
+    width: 100%;
+  }
+}
